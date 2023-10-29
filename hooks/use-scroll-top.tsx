@@ -14,5 +14,7 @@ export const useScrollTop = (threshold = 10) => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [threshold]);
+
+  return scrolled;
 };
