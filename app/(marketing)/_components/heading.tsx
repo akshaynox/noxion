@@ -33,11 +33,9 @@ export const Heading = () => {
       )}
       {!isAuthenticated && !isLoading && (
         <SignInButton mode="modal">
-          <Button asChild>
-            <>
-              Get Noxion free
-              <ArrowRight className="h-4 w-4 ml-2" />
-            </>
+          <Button>
+            Get Noxion free
+            <ArrowRight className="h-4 w-4 ml-2" />
           </Button>
         </SignInButton>
       )}
